@@ -1,0 +1,84 @@
+/* html/css/style.css */
+
+/* Đặt màu nền cho toàn bộ trang (màu xám nhạt) */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tùy chỉnh phần Header (Banner màu xanh da trời) */
+.custom-header {
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+/* Tùy chỉnh các khối Card (Thêm sản phẩm & Danh sách) */
+.custom-card {
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Tạo bóng đổ nhẹ */
+    padding: 24px;
+    height: 100%; /* Giúp 2 cột cao bằng nhau nếu cần */
+}
+
+/* Định dạng tiêu đề của các khối */
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Định dạng text mô tả phụ (chữ màu xám, cỡ nhỏ) */
+.card-subtitle {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* Tùy chỉnh badge trạng thái (Còn hàng/Hết hàng) */
+.badge-in-stock {
+    background-color: #d1fae5;
+    color: #059669;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.badge-out-of-stock {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Tùy chỉnh bảng */
+.table th {
+    font-size: 0.85rem;
+    text-transform: uppercase; /* In hoa tiêu đề cột */
+    color: #495057;
+    border-bottom: 2px solid #e9ecef;
+}
+.table td {
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+}
+label.error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+input.error, select.error {
+    border: 1px solid #e74c3c;
+}
+/* Tùy chỉnh thẻ h3 bên trong custom-card */
+.custom-card h3 {
+    font-size: 0.9rem;      /* Kích thước chữ nhỏ hơn tiêu đề chính */
+    color: #6c757d;         /* Màu xám nhạt */
+    font-weight: 400;       /* Độ dày chữ bình thường */
+    margin-bottom: 20px;    /* Khoảng cách xuống dưới để không dính vào ô input */
+}
